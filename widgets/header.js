@@ -1,15 +1,23 @@
 import { Logo } from "../shared/ui";
 import { Link } from "../shared/ui"
 
+const links = [
+    {link: "#", children: "Что такое собака"},
+    {link: "#", children: "Интересные факты"},
+    {link: "#", children: "Породы"},
+    {link: "#", children: "Сгенерировать"}
+]
+
 export const Header = () => {
     return(
         <div className="flex justify-between py-5 px-9 bg-[#4d86ff] rounded-full">
             <Logo/>
             <nav className="flex items-center gap-14">
-                <Link children="Что такое собака" link="#"/>
-                <Link children="Интересные факты" link="#"/>
-                <Link children="Породы" link="#"/>
-                <Link children="Сгенерировать" link="#"/>
+                {links.map((item, i)=>{
+                    return(
+                        <Link key={i} link={item.link} children={item.children}/>
+                    )  
+                })};
             </nav>
         </div>
     )

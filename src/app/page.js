@@ -5,6 +5,7 @@ import { Logo } from "../../shared/ui";
 import { Header } from "../../widgets/header";
 import { Footer } from "../../widgets/footer";
 import { MainScreen } from "../../widgets/mainScreen";
+import { About } from "../../widgets/about";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
         <div>
         <MainScreen/>
         </div>    
+        <div>
+          <About/>
+        </div>
       </main>
 
       <footer>
