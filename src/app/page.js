@@ -6,6 +6,7 @@ import { Header } from "../../widgets/header";
 import { Footer } from "../../widgets/footer";
 import { MainScreen } from "../../widgets/mainScreen";
 import { About } from "../../widgets/about";
+import { Facts } from "../../widgets/facts";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
         </div>    
         <div>
           <About/>
+        </div>
+        <div>
+          <Facts/>
         </div>
       </main>
 
